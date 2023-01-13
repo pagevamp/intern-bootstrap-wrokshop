@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FED Starter Kit'})
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                <!-- @@include('includes/header.html', { 'headerSkin': 'theme-header--dark' }) -->
+                <main class="theme-main">
+                  @@include('includes/modules/above-the-fold/leadspace.html', {
+                    'title': 'Getting Here',
+                    imgurl: 'images/leadspace-2.jpg',
+                    description: false,
+                    descriptionContent: 'Rocky Mountain National Park attracts over four-million visitors annually who wish to experience its natural beauty and wonder. Know what to expect so you can make the most out of your experience.'
+                  })
+                  @@include('includes/modules/above-the-fold/leadspace.html', {
+                    'title': 'Getting Here',
+                    imgurl: 'images/leadspace-2.jpg',
+                    description: true,
+                    descriptionContent: 'Rocky Mountain National Park attracts over four-million visitors annually who wish to experience its natural beauty and wonder. Know what to expect so you can make the most out of your experience.'
+                  })
+                  @@include('includes/modules/section/section-itenary.html',{
+                    title: 'The Short Way',
+                    imgurl:  'images/itenary-1.jpg',
+                    time: 'Est. time 1:30 hours',
+                    description: '<p>From Denver International Airport take Colorado E470 N and I-25 to CO-66 W through Longmont and follow US-36 W to Estes. If you are looking to pass through Boulder, which is a comparable time but more scenic, take Colorado E470 N to Northwest Parkway and follow US-36 W to Estes.</p><p>No matter which route you take, we’ve recommended some spots along the way and have a playlist ready to go to make your drive easy and enjoyable.</p>',
+                    topSectionModifier: 'flex-md-row-reverse',
+                    bottomTitle: 'Highlights:',
+                    "guides": {
+                        "guideList": [
+                            {
+                                list1: 'apple',
+                                list2: 'orange',
+                                listDescription: 'banana'
+                            },
+                            {
+                                list1: 'apple',
+                                list2: 'orange',
+                                listDescription: 'banana'
+                            },
+                            {
+                                list1: 'apple',
+                                list2: 'orange',
+                                listDescription: 'banana'
+                            },
+                            {
+                                list1: 'apple',
+                                list2: 'orange',
+                                listDescription: 'banana'
+                            },
+                            {
+                                list1: 'apple',
+                                list2: 'orange',
+                                listDescription: 'banana'
+                            },
+                            {
+                                list1: 'apple',
+                                list2: 'orange',
+                                listDescription: 'banana'
+                            }
+                            ]
+                        }
+                  })
+                
+                </main>
+            </div>
+            @@include('includes/footer.html') @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

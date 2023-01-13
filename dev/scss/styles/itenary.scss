@@ -1,0 +1,90 @@
+@import '../common-imports';
+.c{
+    &-itenary{
+        &-topsection{
+            &-ctaGroup{
+                >a{
+                    &:first-of-type{
+                        margin-bottom: 2rem;
+                        margin-right: 2rem
+                    }
+                }
+            }
+            &-image{
+                overflow: hidden;
+                &--borderRadius{
+                    border-radius: 3rem;
+                }
+            }
+            &-description{}
+        }
+        &-bottomsection{
+            position: relative;
+            &::before{
+                content: '';
+                width: 1px ;
+                height: 100%;
+                position: absolute;
+                left: 3px;
+                background-color: rgba(#2f2f2f,.2);
+                @include media-breakpoint-up(md){
+                    display: none;
+                }
+            }
+            &--title{
+                padding-left: 2.7rem;
+                @include media-breakpoint-up(md){
+                    padding-left: 0;
+                    margin-bottom: 4.4rem;
+                }
+            }
+        }
+
+        &-guide{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap:2rem;
+            padding-left: 2.7rem;
+          
+            @include media-breakpoint-up(md){
+                grid-template-columns: repeat(6,1fr);
+                grid-column-gap:1.1rem;
+                position: relative;
+                padding-left: 0;
+            }
+
+            &:before{
+                @include media-breakpoint-up(md){
+                    content: '';
+                    width: 100% ;
+                    height: 1px;
+                    position: absolute;
+                    left: 0;
+                    background-color: rgba(#2f2f2f,.2);
+                    top: -1.9rem;
+                }
+
+            }
+            &__item{
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    background-color: $primary;
+                    position: absolute;
+                    top: 1rem;
+                    left: -2.7rem;
+                    @include media-breakpoint-up(md){
+                        left: 0;
+                        top: -2.2rem;
+                    }
+                }
+            }
+        }
+
+       
+    }
+
+}

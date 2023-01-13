@@ -1,0 +1,85 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4 {
+    @extend %heading;
+}
+
+.h1,
+h1 {
+    font-size: 7.4rem;
+    line-height: 0.86;
+    @include media-breakpoint-up(lg){
+        font-size: 18.4rem; 
+    }
+}
+.h2,
+h2 {
+    font-size: 6rem;
+    line-height: 1;
+    @include media-breakpoint-up(lg){
+        font-size: 14rem; 
+    }
+}
+.h3,
+h3 {
+    font-size: 4.5rem;
+    line-height: 1.11;
+    letter-spacing: -0.02em;
+    @include media-breakpoint-up(lg){
+        font-size: 12rem; 
+        line-height: 1.17;
+    }
+}
+.h4,
+h4 {
+    font-size: 3.5rem;
+    line-height: 1.14;
+}
+.h5,
+h5 {
+    font-size: 3.3rem;
+    line-height: 1.14;
+}
+
+.body {
+    &-large {
+        font-size: 2rem;
+        line-height: 1.5;
+        letter-spacing: 0.01em;
+    }
+    &-medium {
+        font-size: 1.8rem;
+        line-height: 1.56;
+    }
+    &-small {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    &-large {
+        font-size: 2rem;
+        line-height: 1.5;
+        letter-spacing: 0.21em;
+    }
+    &-small {
+        font-size: 1.2rem;
+        line-height: 1.67;
+        letter-spacing: 0.6em;
+    }
+}
+
+.cta {
+    font-size: 1.3rem;
+    line-height: 1;
+    letter-spacing: 0.2em;
+}

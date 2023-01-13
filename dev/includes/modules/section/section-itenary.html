@@ -1,0 +1,42 @@
+<section class="c-itenary pt-20 pb-18 pt-lg-21 pb-lg-22">
+    <div class="container">
+        <div class="row justify-content-lg-center">
+            <div class="col-12 col-lg-10">
+                <h2 class="h2 mb-10">@@title</h2>
+                <div class="c-itenary-topsection row mb-lg-12 @@topSectionModifier">
+                    <div class="col-12 col-md-6">
+                        <div
+                            class="c-itenary-topsection-image c-itenary-topsection-image--borderRadius ratio ratio-462x450 mb-13 mb-lg-0"
+                        >
+                            <img src="@@imgurl" alt="@@title" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mt-8 mb-13 mb-lg-0">
+                        <div class="body-large mb-5">@@time</div>
+                        <div class="c-itenary-topsection-description mb-13 mb-lg-8">@@description</div>
+                        <div class="c-itenary-topsection-ctaGroup">
+                            <a href="" class="btn btn-outline-primary align-top">Soundtrack Your Drive</a>
+                            <a href="" class="btn btn-outline-primary align-top">Soundtrack Your Drive</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-itenary-bottomsection">
+                    <h3 class="h4  c-itenary-bottomsection--title">@@bottomTitle</h3>
+                    <div class="c-itenary-guide">
+                        <!-- <div class="c-itenary-guide__item">
+                            <div class="c-itenary-guide__item--title body-small">
+                                <span class="c-itenary-guide__item--list mb-1">St. Vrain</span>
+                                <span class="c-itenary-guide__item--list mb-4">State Park</span>
+                            </div>
+                            <div class="c-itenary-guide__item--meta body-small">Exit 240 off I-25</div>
+                        </div> -->
+                        @@for (var i = 0; i < guides.guideList.length; i++) { 
+                            @@include('../repeator/guidelist.html',
+                            `+(JSON.stringify(guides.guideList[i]))+`) 
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
